@@ -1,0 +1,25 @@
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.child{
+    width: calc(50% - 5px);
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid gray;
+}
+
+.large{
+    width: calc(100% - 5px);
+}
+
+@media screen and (max-width: 1024px) {
+  .child {
+    width: calc(100% - 5px);
+  }
+}
